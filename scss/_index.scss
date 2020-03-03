@@ -1,0 +1,117 @@
+body {
+    background-color: $secondary;
+}
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+}
+header {
+    padding: 70px 0px 50px;
+    text-align: center;
+    color: $primary;
+    @include mobile {
+        padding: 40px 0px 30px;
+    }
+    h1 {
+        padding-bottom: 30px;
+        font-size: 70px;
+        font-weight: bold;
+        letter-spacing: 10px;
+        @include mobile {
+            padding-bottom: 20px;
+            font-size: 40px;
+            letter-spacing: 6px;
+        }
+    }
+    h2 {
+        letter-spacing: 3px;
+        @include mobile {
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.main {
+    padding: 0px 45px;
+    @include iphone6Plus {
+        padding: 0px 20px;
+    }
+    .container {
+        padding-bottom: 10px;
+        border-radius: 20px;
+        border: 2px solid $primary;
+    }
+}
+
+.item {
+    display: flex;
+    align-items: baseline;
+    color: $primary;
+    letter-spacing: 3px;
+    font-size: 12px;
+    .current {
+        font-size: 16px;
+    }
+}
+//slider
+.slider {
+    width: 80%;
+    margin: 10px auto 10px;
+}
+.slider.fade {
+    width: 90%;
+    .slick-prev:before, .slick-next:before {
+        color: #ffffff;
+        font-size: 30px;
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+    .slick-dots li button:before {
+        color: #ffffff;
+    }
+}
+.slider-for{
+    .slick-slide {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+        img {
+            box-shadow: 0px 0px 8px #000000;
+        }
+    }
+}
+.slick {
+    &-slide {
+        margin: 0px 5px;
+        transition: all ease-in-out .3s;
+        opacity: .2;
+    }
+    &-prev:before, &-next:before {
+        color: $primary;
+        font-size: 25px;
+    }
+    &-prev {
+        left: -35px;
+        @include mobile {
+            left: -25px;
+        }
+    }
+    &-next {
+        right: -35px;
+        @include mobile {
+            right: -25px;
+        }
+    }
+    &-active {
+        opacity: .5;
+    }
+    &-current {
+        opacity: 1;
+    }
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+}
