@@ -6,7 +6,7 @@ https://groenwen.github.io/DesignPortfolio/
 
 ### 練習技術
 * 套用 jQuery 第三方 Plugin    
-  * 使用 [slick](http://kenwheeler.github.io/slick/) plugin
+  * plugin - [slick](http://kenwheeler.github.io/slick/)
 * SCSS
 * 切版
 * RWD
